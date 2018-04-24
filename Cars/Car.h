@@ -15,7 +15,7 @@ public:
 	};
 
 	double velocity;
-	Point coords[4]; //collision checking
+	sf::Vector2f coords[4]; //collision checking
 	Car(sf::Vector2f &pos, const sf::Color &c, sf::Vector2f &size) //, sf::Texture &newTexture) Dont have Texture for car to make sprite yet.
 	{
 		this->setFillColor(c);
