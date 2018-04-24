@@ -1,3 +1,3 @@
 ******************
-Put these filse in your existing project folder for code to work properly
+Put these filse in your existing project folder for code to work properly (without this readme)
 ******************
