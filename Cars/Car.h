@@ -1,7 +1,6 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
-#include "Point.h"
 
 class Car : public sf::RectangleShape
 {
