@@ -50,24 +50,3 @@ int main(void) // car movement
 
 	return 0;
 }
-
-/*int main(void) // map
-{
-	sf::RenderWindow window(sf::VideoMode(1000, 800), "SFML works!");
-	sf::Vertex vertex(sf::Vector2f(10, 50), sf::Color::Red, sf::Vector2f(100, 100));
-
-	while (window.isOpen())
-	{
-		sf::Event event;
-		while (window.pollEvent(event))
-		{
-			if (event.type == sf::Event::Closed)
-			{
-				window.close();
-			}
-		}
-		window.clear();
-
-		window.display();
-	}
-}*/
