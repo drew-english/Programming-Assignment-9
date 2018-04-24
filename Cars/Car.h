@@ -5,7 +5,7 @@
 class Car : public sf::RectangleShape
 {
 public:
-	enum position
+	enum position //allows to keep track of what position each coordinate corresponds to on the car
 	{
 		topLeft = 0,
 		topRight = 1,
@@ -20,13 +20,13 @@ public:
 		this->setFillColor(c);
 		this->setSize(size);
 		this->setPosition(pos);
-		coords[topLeft].coordinate = pos;
-		coords[topRight].coordinate.x = pos.x + size.x;
-		coords[topRight].coordinate.y = pos.y;
-		coords[botRight].coordinate.x = pos.x + size.x;
-		coords[botRight].coordinate.y = pos.y + size.y;
-		coords[botLeft].coordinate.x = pos.x;
-		coords[botLeft].coordinate.y = pos.y + size.y;
+		coords[topLeft] = pos;
+		coords[topRight].x = pos.x + size.x;
+		coords[topRight].y = pos.y;
+		coords[botRight].x = pos.x + size.x;
+		coords[botRight].y = pos.y + size.y;
+		coords[botLeft].x = pos.x;
+		coords[botLeft].y = pos.y + size.y;
 		velocity = 0.0;
 	}
 
